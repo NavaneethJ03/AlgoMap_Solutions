@@ -1,6 +1,6 @@
 # Brute Force Solution 
 class Solution:
-	def Kthelement(self , nums:List[int]) -> int:
+	def Kthelement(self , nums:List[int] , k: int) -> int:
 		nums.sort()
 		return nums[len(nums) - k]
 # Time Complexity - O(N Log N)
@@ -9,7 +9,7 @@ class Solution:
 # Using Max Heap 
 
 class Solution:
-	def Kthelement(self , nums: List[int]) -> int:
+	def Kthelement(self , nums: List[int] , k: int) -> int:
 		heap = [-num for num in nums]
 		heapq.heapify(heap)
 		res = 0 
@@ -24,7 +24,7 @@ class Solution:
 # Using Min Heap 
 
 class Solution:
-	def Kthelement(self , nums: List[int]) -> int:
+	def Kthelement(self , nums: List[int] , k: int) -> int:
 		min_heap = []
 		for i in range(len(nums)):
 			if len(min_heap) < k:
