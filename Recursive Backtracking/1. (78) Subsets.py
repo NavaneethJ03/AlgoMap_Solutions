@@ -14,3 +14,7 @@ class Solution:
 
         backtrack(0)
         return result
+
+# Time Complexity - O(n * 2^N) Since it takes O(N) for copying and we do it for all the 2^N subsets 
+# Space Complexity - O(N * 2^N) The auxilary space just takes O(N) for both the result and subset array but it takes 2^N for the output
+
