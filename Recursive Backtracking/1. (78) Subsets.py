@@ -6,10 +6,11 @@ class Solution:
             if i >= len(nums):
                 result.append(subset[:]) # result.append(subset.copy())
                 return
-            backtrack(i+1)
             subset.append(nums[i])
-            backtrack(i+1)
+            backtrack(i+1)   
             subset.pop()
+            backtrack(i+1)
+            
 
         backtrack(0)
         return result
