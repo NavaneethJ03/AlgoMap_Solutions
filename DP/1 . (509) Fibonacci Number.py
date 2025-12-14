@@ -17,7 +17,8 @@ class Solution:
 # Time Complexity - O(N) 
 # Space Complexity - O(1) 
 
-# Top - Down Tabulation
+# Top - Down DP (Memoization)
+
 class Solution:
     def fib(self , n:int) -> int:
         dp = [n+1] * 0
@@ -28,7 +29,8 @@ class Solution:
 # Time Complexity - O(N)
 # Space Complexity - O(N)
 
-# Bottom - Up Memoization 
+# Bottom - Up DP (Tabulation) 
+
 class Solution:
     def fib(self , n: int) -> int:
         memo = {0:0 , 1:1}
